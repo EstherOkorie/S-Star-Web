@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box; 
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(code\ background\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(code\ background\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.logo{
+    color: #ff7200;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: Arial; 
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent ;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px; 
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color:white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+
+
+
+.about{
+    background:url(about.jpg) no-repeat;
+    background-size: 50%;
+    /* background-color: #fdfdfd; */
+    overflow: hidden;
+    padding: 100px 0;
+}
+.about img{
+    width: 600px;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    /* background: url(using\ laptop.jpg) no-repeat;
+    background-size: 100%; */
+    background-color: #ce650f;
+    padding: 140px;
+    box-shadow: 12px 12px 8px rgb(0, 0, 0,0.3);
+}
+
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text{ 
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    text-align: justify;
+    margin-bottom:50px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #ff7200;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #1a2949;
+    min-height: 100px;
+    padding-top: 2px;
+    padding-left: 100px 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ footer .social_icon,
+ footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    flex-wrap:inherit;
+ }
+ footer .social_icon li,
+ footer .menu li{
+    list-style: none;
+    margin-top: none;
+ }
+ footer .social_icon li a{
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 5px;
+    display: inline-block;
+    transition: 0.5s;
+ }
+ footer .social_icon li a:hover{
+    transform: translateY(-10px);
+    color: orange;
+ }
+ footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin-top: 1px;
+    display:contents;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+ }
+ footer .menu li a:hover{
+    opacity: 1;
+    color: orange;
+ }
+ footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+ }
+
+
+
+
+ 
+/* @media screen and (max-width:120px) {
+    .inner-section{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+}
+
+.inner-section{
+    width: 100%;
+} */
+
+@media screen and (max-width: 600px){
+    .about{
+        padding: 0%;
+    }
+    .inner-section{
+        padding:60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding:5px;
+        width: 160px;
+    } 
+}
